@@ -1,0 +1,493 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins';
+    background-color: #fff;
+    overflow-x: hidden;
+}
+/* Buttons */
+.btn{
+    padding: 18px 38px;
+    border: none;
+    background-color: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+}
+.btn-white{
+    background-color: #fff;
+    border: 1px solid #FF4363;
+    color: #FF4363;
+}
+.btn-secondary{
+    background-color: #FF4363;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all 0.2s ease-in-out
+}
+.btn-secondary:hover{
+    background-color: transparent;
+    border: 1px solid #FF4363;
+    color: #FF4363;
+}
+.btn-white:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.2s ease-in-out
+}
+.icons-rounded{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: #FFF4F5;
+    padding: 25px;
+    border-radius: 50%;
+    transform: scale(0.7);
+}
+
+h1{
+    text-transform: capitalize;
+}
+/* Button ends */
+.header{
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    color: #fff;
+    box-sizing: border-box;
+    background-image: url('./assets/Mask\ Group\ 2.png'),  url('./assets/Shape.png');
+    background-position: right bottom;
+    background-size:80%, cover; 
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.header nav{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: relative;
+    z-index: 100;
+}
+.header .logo{
+    text-transform: uppercase;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.header .logo:hover{
+    animation: logoAnim 0.5s;
+}
+.header .menu{
+    cursor: pointer;
+}
+.header nav i:hover{
+    transform: rotate(90deg);
+    transition: all 0.3s ease-in-out;
+}
+.header-container{
+    width: 80%;
+    margin: 6% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.text-container h1{
+    font-size: 70px;
+    line-height: 90px;
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+}
+.text-container p{
+    font-size: 18px;
+    letter-spacing: 2px;
+    /* max-width: 80%; */
+}
+
+.text-container .btns{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.text-container a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 200;
+}
+.text-container button{
+    position: relative;
+    z-index: 100;
+}
+.text-container a i{
+    transform: translateX(-40px);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.text-container a:hover i{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+
+.advantages{
+    width: 100vw;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+.advantages .container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+}
+.advantages .container .item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    line-height: 35px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px 2px rgba(0,0,0,0.15);
+    padding: 50px 30px;
+    width: 30%;
+
+}
+
+.advantages .container .icon{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff43621c;
+    border-radius: 50%;
+}
+.advantages .container .item:first-child .icon{
+    background-color: #FFF4F5;
+}
+.advantages .container .item:nth-child(1) .icon{
+    background-color: #F5F4FF;
+}
+.advantages .container .item:first-child .icon{
+    background-color: #FFF6F3;
+}
+
+.advantages .container img{
+    width: 30px;
+    height: 30px;
+}
+.advantages .container .item p{
+    max-width: 75%;
+}
+
+.advantages .container .item:hover{
+    background-color: #FF4363;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.advantages .container .item:hover .icon{
+    background-color: transparent;
+}
+.advantages .container .item:hover .advantages .container .item p{
+    color: #fff!important;
+}
+/* Section design */
+.design{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
+}
+.design .img img{
+    height: 250px;
+}
+.design .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.design .text h1{
+    font-size: 50px;
+    max-width: 80%;
+}
+.design .text ul{
+    padding-left: 20px;
+    list-style: none;
+}
+.design .text ul li{
+    position: relative;
+    font-weight: 300;
+}
+.design .text ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #FF4363; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  position: absolute;
+}
+
+.design .text .icons img{
+    width: 25px;
+    height: 25px;
+}
+.design .text >p{
+    max-width: 80%;
+}
+
+/* Features sections */
+
+.features{
+    width: 80%;
+    height: 100vh;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-left: 0;
+}
+.features h1{
+    font-family: 'Roboto';
+}
+.features p{
+    color: #666;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 2px;
+    font-weight: 300;
+    max-width: 90%;
+}
+.features .img img{
+    width: 500px;
+}
+.features-items .item .item-header{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+.features-items .item .item-header h4{
+    font-weight: 500;
+    font-size: 22px;
+
+}
+.get-app{
+    width: 100vw;
+    height: 600px;
+    background-image:url('./assets/Mask.png') , url('./assets/BG.png');
+    background-position: left bottom, left bottom;
+    background-repeat: no-repeat, repeat;
+    margin: 50px auto;
+    position: relative;
+}
+.get-app .container{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    padding: 100px ;
+}
+.get-app .text-container{
+    width: 60%;
+    max-height: 500px;
+    margin: 50 auto;
+    color: #fff;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.get-app .text-container p{
+    max-width: 75%;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* Questions */
+.questions{
+    width: 80vw;
+    margin: 100px auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.questions img{
+    height: 450px;
+}
+.questions .text-container{
+    gap: 0;
+}
+.questions .text-container .icons{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF6F3;
+    font-size: 34px;
+    color: #FF4363;
+    font-weight: bold;
+}
+.questions .text-container h1{
+    font-size: 50px;
+}
+.questions .text-container >p{
+    color: #666;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin: 10px 0 50px 0;
+}
+.questions .text-container h4{
+    color: #FF4363;
+
+}
+.questions .text-container .questions-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.questions .text-container .questions-container p{
+    font-size: 14px;
+    color: #666;
+    font-weight: 300;
+    display: none;
+    max-width: 75%;
+}
+.statistics{
+    width: 80%;
+    margin: 50px auto;
+    background-color: #FF4363;
+    color: #fff;
+    padding: 100px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.statistics .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.statistics h1{
+    font-size: 40px;
+}
+.statistics p{
+    font-size: 14px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.luck{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    transform: scale(0.8);
+}
+.luck h1{
+    font-size: 52px;
+}
+.luck p{
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+.footer{
+    margin-top: 50px;
+    width: 100vw;
+    padding: 20px 10%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .links{
+    display: flex;
+    gap: 8px;
+}
+.footer a{
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: #ccc;
+    transition: 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes logoAnim {
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1.2);
+    }
+    40%{
+        transform: scale(1);
+    }
+    60%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
