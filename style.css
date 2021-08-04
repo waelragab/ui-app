@@ -491,3 +491,203 @@ h1{
         transform: scale(1);
     }
 }
+
+@media(max-width: 1000px){
+    .header{
+        background: url('./assets/Shape.png');
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: repeat-x;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .header h1{
+        font-size: 28px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .header-container{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-container{
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-container p{
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .text-container .btns{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.advantages .container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.advantages .container .item{
+    width: auto;
+    padding: 30px 20px ;
+}   
+.design{
+    flex-direction: column;
+}
+.design .img img{
+    height: 150px;
+}
+.design .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.design .text h1{
+    font-size: 28px;
+}
+.design .text ul li::before {
+  display: none; 
+}
+.features{
+    height: auto;
+    margin: 50px auto;
+    flex-direction: column;
+    gap: 0px;
+}
+.features .text-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 0px;
+    gap: 0px;
+}
+.features .text-container p{
+    max-width: 100%;
+}
+.features h1{
+    font-size: 28px;
+}
+.features .img img{
+    width: 400px;
+}
+.features-items .item{
+    justify-content: center;
+    align-items: centers;
+    text-align: center;
+}
+.features-items .item .item-header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.get-app{
+    height: auto;
+    background-image:url('./assets/BG.png');
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    margin: 0 auto;
+    padding: 50px;
+}
+.get-app .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+.get-app .text-container{
+    width: 100%;
+    max-height: 100%;
+    margin: 10 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.get-app .text-container h1{
+    font-size: 28px;
+}
+.get-app .text-container p{
+    max-width: 100%;
+    line-height: 2;
+    font-size: 14px;
+}
+.questions{
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+    gap: 20px;
+}
+.questions .text-container .icons{
+    display: none;
+}
+.questions img{
+    height: 300px;
+}
+.questions .text-container p{
+    max-width: 80%;
+}
+.questions .text-container h1{
+    font-size: 28px;
+}
+.statistics{
+    width: 60%;
+    margin: 20px auto;
+    flex-direction: column;
+    padding: 50px 0px;
+    gap: 20px;
+    justify-content: center;
+}
+.statistics .item{
+    position: relative;
+}
+.statistics .item::after{
+    content: "";
+    width: 200px;
+    height: 2px;
+    background-color: rgba(238, 238, 238, 0.418);
+    display: block;
+    margin: 20px auto;
+}
+.luck h1{
+    font-size: 32px;
+}
+.luck p{
+    max-width: 100%;
+}
+.footer{
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+}
+.footer .logo{
+    order: 1;
+}
+.footer .links{
+    order: 2;
+}
+.footer p{
+    order: 3;
+}
+}
