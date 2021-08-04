@@ -88,9 +88,11 @@ h1{
 .header .menu{
     cursor: pointer;
 }
+.header nav i{
+    transition: all 0.3s ease-in-out;
+}
 .header nav i:hover{
     transform: rotate(90deg);
-    transition: all 0.3s ease-in-out;
 }
 .header-container{
     width: 80%;
@@ -176,7 +178,7 @@ h1{
     box-shadow: 0 2px 20px 2px rgba(0,0,0,0.15);
     padding: 50px 30px;
     width: 30%;
-
+    transition: all 0.3s ease-in-out;
 }
 
 .advantages .container .icon{
@@ -188,6 +190,7 @@ h1{
     align-items: center;
     background-color: #ff43621c;
     border-radius: 50%;
+    transition: all 0.3s ease-in-out;
 }
 .advantages .container .item:first-child .icon{
     background-color: #FFF4F5;
@@ -210,7 +213,6 @@ h1{
 .advantages .container .item:hover{
     background-color: #FF4363;
     color: #fff;
-    transition: all 0.3s ease-in-out;
 }
 .advantages .container .item:hover .icon{
     background-color: transparent;
